@@ -1,0 +1,273 @@
+{
+  "config": {
+    "experiment_id": "EXP-01-KAGGLE-2xT4-DDP-BASELINE",
+    "date": "2026-10-02 15:45:42",
+    "model": "PixelWarriorNetwork (Current UNet baseline)",
+    "params": 31044152,
+    "dataset_root": "/kaggle/working/dataset",
+    "train_samples": 435,
+    "val_samples": 50,
+    "seed": 42,
+    "epochs": 15,
+    "world_size": 2,
+    "per_gpu_batch_size": 2,
+    "effective_global_batch_size": 4,
+    "lr": 0.0001,
+    "optimizer": "Adam (default betas)",
+    "scheduler": "CosineAnnealingLR (eta_min=1e-6)",
+    "loss": "MSELoss",
+    "device": "cuda:0",
+    "gpu_devices": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "mixed_precision": true,
+    "evaluation_resolution": "Native 600x400 (unwarped)",
+    "clamping": "[0.0, 1.0]"
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.03565,
+      "train_psnr": 15.64,
+      "val_mse": 0.068298,
+      "val_psnr": 13.33,
+      "val_ssim": 0.2755,
+      "val_psnr_min": 5.76,
+      "val_psnr_max": 21.01,
+      "duration_sec": 36.3,
+      "lr": 9.892e-05,
+      "vram_usage": [
+        "GPU 0: 619MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.02333,
+      "train_psnr": 16.86,
+      "val_mse": 0.029384,
+      "val_psnr": 15.86,
+      "val_ssim": 0.5241,
+      "val_psnr_min": 10.84,
+      "val_psnr_max": 20.69,
+      "duration_sec": 36.1,
+      "lr": 9.572e-05,
+      "vram_usage": [
+        "GPU 0: 619MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0225,
+      "train_psnr": 17.06,
+      "val_mse": 0.037028,
+      "val_psnr": 14.64,
+      "val_ssim": 0.5024,
+      "val_psnr_min": 10.11,
+      "val_psnr_max": 17.71,
+      "duration_sec": 35.0,
+      "lr": 9.055e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.02063,
+      "train_psnr": 17.49,
+      "val_mse": 0.092189,
+      "val_psnr": 11.85,
+      "val_ssim": 0.2206,
+      "val_psnr_min": 4.51,
+      "val_psnr_max": 19.36,
+      "duration_sec": 35.9,
+      "lr": 8.362e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.01993,
+      "train_psnr": 17.62,
+      "val_mse": 0.039814,
+      "val_psnr": 15.17,
+      "val_ssim": 0.5262,
+      "val_psnr_min": 7.55,
+      "val_psnr_max": 20.74,
+      "duration_sec": 35.4,
+      "lr": 7.525e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.01946,
+      "train_psnr": 17.73,
+      "val_mse": 0.108738,
+      "val_psnr": 10.08,
+      "val_ssim": 0.148,
+      "val_psnr_min": 5.49,
+      "val_psnr_max": 13.06,
+      "duration_sec": 35.6,
+      "lr": 6.58e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.01915,
+      "train_psnr": 17.77,
+      "val_mse": 0.072072,
+      "val_psnr": 12.91,
+      "val_ssim": 0.3845,
+      "val_psnr_min": 4.7,
+      "val_psnr_max": 18.6,
+      "duration_sec": 35.6,
+      "lr": 5.567e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.01783,
+      "train_psnr": 18.14,
+      "val_mse": 0.035471,
+      "val_psnr": 15.64,
+      "val_ssim": 0.5992,
+      "val_psnr_min": 10.41,
+      "val_psnr_max": 21.83,
+      "duration_sec": 35.6,
+      "lr": 4.533e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.01747,
+      "train_psnr": 18.24,
+      "val_mse": 0.063481,
+      "val_psnr": 12.33,
+      "val_ssim": 0.5544,
+      "val_psnr_min": 8.94,
+      "val_psnr_max": 15.97,
+      "duration_sec": 35.6,
+      "lr": 3.52e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.01634,
+      "train_psnr": 18.49,
+      "val_mse": 0.038907,
+      "val_psnr": 14.84,
+      "val_ssim": 0.627,
+      "val_psnr_min": 10.85,
+      "val_psnr_max": 20.35,
+      "duration_sec": 35.6,
+      "lr": 2.575e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.01595,
+      "train_psnr": 18.61,
+      "val_mse": 0.032383,
+      "val_psnr": 15.79,
+      "val_ssim": 0.5832,
+      "val_psnr_min": 9.49,
+      "val_psnr_max": 20.89,
+      "duration_sec": 35.7,
+      "lr": 1.738e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.01574,
+      "train_psnr": 18.68,
+      "val_mse": 0.022445,
+      "val_psnr": 17.54,
+      "val_ssim": 0.6678,
+      "val_psnr_min": 10.96,
+      "val_psnr_max": 23.31,
+      "duration_sec": 35.6,
+      "lr": 1.045e-05,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.01516,
+      "train_psnr": 18.77,
+      "val_mse": 0.024306,
+      "val_psnr": 17.11,
+      "val_ssim": 0.6591,
+      "val_psnr_min": 10.03,
+      "val_psnr_max": 23.97,
+      "duration_sec": 35.6,
+      "lr": 5.28e-06,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.01508,
+      "train_psnr": 18.85,
+      "val_mse": 0.02153,
+      "val_psnr": 18.03,
+      "val_ssim": 0.6697,
+      "val_psnr_min": 9.61,
+      "val_psnr_max": 23.93,
+      "duration_sec": 35.8,
+      "lr": 2.08e-06,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.01432,
+      "train_psnr": 19.06,
+      "val_mse": 0.024842,
+      "val_psnr": 17.92,
+      "val_ssim": 0.665,
+      "val_psnr_min": 8.12,
+      "val_psnr_max": 25.21,
+      "duration_sec": 35.7,
+      "lr": 1e-06,
+      "vram_usage": [
+        "GPU 0: 620MB alloc / 2278MB res",
+        "GPU 1: 0MB alloc / 0MB res"
+      ]
+    }
+  ],
+  "total_time_sec": 539.1,
+  "total_time_min": 8.99,
+  "best_val_psnr": 18.03
+}

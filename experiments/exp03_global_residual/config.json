@@ -1,0 +1,26 @@
+{
+  "experiment_id": "EXP-03-GLOBAL-RESIDUAL",
+  "date": "2026-10-02 16:50:04",
+  "model": "PixelWarriorNetwork (InstanceNorm2d + GlobalResidual)",
+  "params": 31044152,
+  "dataset_root": "./dataset",
+  "train_samples": 435,
+  "val_samples": 50,
+  "seed": 42,
+  "epochs": 15,
+  "world_size": 2,
+  "per_gpu_batch_size": 2,
+  "effective_global_batch_size": 4,
+  "lr": 0.0001,
+  "optimizer": "Adam (default betas)",
+  "scheduler": "CosineAnnealingLR (eta_min=1e-6)",
+  "loss": "MSELoss",
+  "device": "cuda:0",
+  "gpu_devices": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "mixed_precision": true,
+  "evaluation_resolution": "Native 600x400 (unwarped)",
+  "clamping": "[0.0, 1.0]"
+}

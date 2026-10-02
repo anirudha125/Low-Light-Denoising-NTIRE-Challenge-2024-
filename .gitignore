@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Datasets & Archives
+dataset/
+dataset.zip
+*.zip
+*.tar
+*.tar.gz
+
+# Model Weights & Checkpoints (large binary files)
+checkpoints/
+*.pth
+*.pt
+*.bin
+*.onnx
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environments & IDEs
+.env
+.venv/
+env/
+venv/
+.vscode/
+.idea/
+
+# OS specific files
+.DS_Store
+Thumbs.db

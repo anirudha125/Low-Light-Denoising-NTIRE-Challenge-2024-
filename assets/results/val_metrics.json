@@ -1,0 +1,50 @@
+{
+  "num_val_images": 50,
+  "val_psnr": 20.06,
+  "val_ssim": 0.7102,
+  "val_mse": 0.012044,
+  "representative_cases": [
+    {
+      "filename": "211.png",
+      "category": "Very Dark Scene",
+      "psnr": 16.58,
+      "ssim": 0.6734,
+      "panel_file": "result_01.png"
+    },
+    {
+      "filename": "121.png",
+      "category": "Indoor Scene",
+      "psnr": 25.34,
+      "ssim": 0.7534,
+      "panel_file": "result_02.png"
+    },
+    {
+      "filename": "28.png",
+      "category": "Strong Illumination Difference",
+      "psnr": 16.39,
+      "ssim": 0.701,
+      "panel_file": "result_03.png"
+    },
+    {
+      "filename": "551.png",
+      "category": "Fine Detail",
+      "psnr": 24.73,
+      "ssim": 0.7852,
+      "panel_file": "result_04.png"
+    },
+    {
+      "filename": "522.png",
+      "category": "Significant Shadow Regions",
+      "psnr": 18.72,
+      "ssim": 0.5259,
+      "panel_file": "result_05.png"
+    },
+    {
+      "filename": "688.png",
+      "category": "Representative Normal Case",
+      "psnr": 21.89,
+      "ssim": 0.7371,
+      "panel_file": "result_06.png"
+    }
+  ]
+}
